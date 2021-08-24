@@ -6,6 +6,7 @@
     "scripts": {
         "build": "rimraf dist && tsc",
         "start": "node dist/main/server.js",
+        "dev": "nodemon -L --watch ./dist --nolazy ./dist/main/server.js",
         "up": "yarn build && docker-compose up -d",
         "down": "docker-compose down",
         "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
@@ -49,6 +50,7 @@
         "express": "^4.17.1",
         "jsonwebtoken": "^8.5.1",
         "mongodb": "^3.6.9",
+        "nodemon": "^2.0.12",
         "validator": "^13.6.0"
     },
     "engines": {
