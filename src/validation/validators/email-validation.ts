@@ -1,4 +1,4 @@
-import { EmailValidator } from '../../presentation/controllers/signup/signup-controller-protocols'
+import { EmailValidator } from '../../presentation/controllers/login/signup/signup-controller-protocols'
 import { InvalidParamError } from '../../presentation/errors'
 import { Validation } from '../../presentation/protocols/validation'
 
